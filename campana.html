@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./imgs/logozoonosis.png">
+  <link rel="apple-touch-icon" href="./imgs/logozoonosis.png">
+  <title>Bajo el mismo cielo – Zoonosis</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-campana">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <img src="imgs/logozoonosis.png" alt="Zoonosis Cochabamba" class="logo-img" />
+        <div class="logo-text">
+          Zoonosis Cochabamba<br />
+          <small>Somos su voz</small>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo de clima">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="campana.html" class="active">Bajo el mismo cielo</a>
+        <a href="comentarios.html">Comentarios y ubicación</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-eyebrow">Campaña educativa</p>
+          <h1>Bajo el mismo cielo</h1>
+          <p class="hero-description">
+            Una campaña para recordar que el sol y la lluvia también afectan a perros y gatos.
+            Según la época del año, cambian los riesgos y las formas de protegerlos.
+          </p>
+        </div>
+
+        <div class="hero-illustration">
+          <div class="hero-image hero-image--campana">
+            <!-- Usa una sola ilustración horizontal de la campaña -->
+            <img src="./imgs/fliyer pagina.png" alt="Ilustración de la campaña Bajo el mismo cielo" />
+          </div>
+          <p class="hero-credits">
+            Ilustración general de la campaña “Bajo el mismo cielo”.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ÉPOCA SECA -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Época seca</h2>
+          <p>
+            Entre otoño e invierno predominan los días secos, con radiación solar fuerte y poca humedad.
+            Las mascotas pueden sufrir golpes de calor y deshidratación.
+          </p>
+        </header>
+
+        <div class="climate-epochs-grid">
+          <article class="epoch-card epoch-card--warm">
+            <div class="epoch-media">
+              <!-- 🐾 Imagen ilustrativa época seca (cámbiala por tu propia foto/ilustración) -->
+              <img src="./imgs/epocaseca.png" alt="Perros y gatos en época seca" />
+            </div>
+            <h3>¿Cómo les afecta?</h3>
+            <ul>
+              <li>Golpes de calor por paseos al mediodía.</li>
+              <li>Deshidratación cuando no tienen agua fresca.</li>
+              <li>Quemaduras en almohadillas por suelos muy calientes.</li>
+            </ul>
+          </article>
+
+          <article class="epoch-card epoch-card--warm">
+            <div class="epoch-media">
+              <!-- 🐾 Imagen de recomendaciones en época seca -->
+              <img src="./imgs/epocaseca2.png" alt="Recomendaciones para época seca" />
+            </div>
+            <h3>Recomendaciones</h3>
+            <ul>
+              <li>Paseos en la mañana temprano o al atardecer.</li>
+              <li>Charolas y bebederos con agua limpia y fresca.</li>
+              <li>Sombra y espacios ventilados para descansar.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉPOCA HÚMEDA -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Época húmeda</h2>
+          <p>
+            En temporada de lluvias la humedad y el frío aumentan el riesgo de hongos, parásitos y
+            enfermedades respiratorias en los animales de compañía.
+          </p>
+        </header>
+
+        <div class="climate-epochs-grid">
+          <article class="epoch-card epoch-card--cool">
+            <div class="epoch-media">
+              <!-- 🐾 Imagen ilustrativa época húmeda -->
+              <img src="./imgs/epocahumeda.png" alt="Perros y gatos en época de lluvia" />
+            </div>
+            <h3>¿Cómo les afecta?</h3>
+            <ul>
+              <li>Resfríos, tos y secreciones nasales.</li>
+              <li>Problemas articulares por pisos fríos y mojados.</li>
+              <li>Hongos en piel y almohadillas cuando quedan húmedos.</li>
+            </ul>
+          </article>
+
+          <article class="epoch-card epoch-card--cool">
+            <div class="epoch-media">
+              <!-- 🐾 Imagen de recomendaciones época húmeda -->
+              <img src="./imgs/epocahumeda2.png" alt="Recomendaciones para época húmeda" />
+            </div>
+            <h3>Recomendaciones</h3>
+            <ul>
+              <li>Usar capas o impermeables para los paseos.</li>
+              <li>Secar bien el pelaje y las patas al volver a casa.</li>
+              <li>Evitar charcos y acumulaciones de agua sucia.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMENTOS DE LA CAMPAÑA (GALERÍA) -->
+    <section class="section section-gallery">
+      <div class="container">
+        <header class="section-header">
+          <h2>Momentos de la campaña “Bajo el mismo cielo”</h2>
+          <p>
+            Algunas escenas de cómo se vive la campaña en plazas, parques y unidades educativas.
+          </p>
+        </header>
+
+        <div class="campaign-gallery">
+          <figure class="campaign-item">
+            <img src="./imgs/afiches.png" alt="Feria de campaña en una plaza" />
+            <figcaption>Activaciones con entregas de afiches en plazas</figcaption>
+          </figure>
+          <figure class="campaign-item">
+            <img src="./imgs/senaleticas.png" alt="Taller en unidad educativa" />
+            <figcaption>Señaleticas por lugares estratégicos por la ciudad</figcaption>
+          </figure>
+          <figure class="campaign-item">
+            <img src="./imgs/bebederos.png" alt="Vacunación en parque" />
+            <figcaption>Instalación de bebederos y refugios en laz plazas para el frío</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL DE PUNTOS -->
+    <section class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2>Puntos de campaña en la ciudad</h2>
+          <p>
+            Zoonosis realiza ferias de vacunación, esterilización y educación en diferentes plazas y parques.
+          </p>
+        </header>
+
+        <div class="carousel">
+
+          <div class="carousel-slides">
+
+            <!-- Slide Lincoln -->
+            <div class="carousel-slide active">
+              <div class="carousel-map">
+                <img src="./imgs/parquelincoln.png" alt="Mapa Parque Lincoln" class="carousel-img" />
+                <span class="map-badge">Zona oeste</span>
+                <span class="map-label">Parque Lincoln</span>
+              </div>
+              <div class="carousel-text">
+                <h3>Actividades frecuentes</h3>
+                <ul>
+                  <li>Puntos de hidratación (época seca).</li>
+                  <li>Ferias educativas.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Slide Fidel Anze -->
+            <div class="carousel-slide">
+              <div class="carousel-map">
+                <img src="./imgs/parquefidelanze.png" alt="Mapa Parque Fidel Anze" class="carousel-img" />
+                <span class="map-badge">Zona norte</span>
+                <span class="map-label">Parque Fidel Anze</span>
+              </div>
+              <div class="carousel-text">
+                <h3>Actividades frecuentes</h3>
+                <ul>
+                  <li>Vacunación antirrábica.</li>
+                  <li>Charlas de tenencia responsable.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Slide Excombatientes -->
+            <div class="carousel-slide">
+              <div class="carousel-map">
+                <img src="./imgs/parqueexcombatientes.png" alt="Mapa Parque Excombatientes" class="carousel-img" />
+                <span class="map-badge">Zona sur</span>
+                <span class="map-label">Parque Excombatientes</span>
+              </div>
+              <div class="carousel-text">
+                <h3>Actividades frecuentes</h3>
+                <ul>
+                  <li>Desparasitación.</li>
+                  <li>Vacunación y orientación a familias.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carousel-dots">
+              <button class="carousel-dot active" data-slide="0"></button>
+              <button class="carousel-dot" data-slide="1"></button>
+              <button class="carousel-dot" data-slide="2"></button>
+            </div>
+            <button class="carousel-btn" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>Zoonosis Cochabamba</h3>
+        <p>Prevención, control y educación sobre enfermedades zoonóticas.</p>
+        <p>Trabajo coordinado con familias, barrios y unidades educativas.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>Teléfono: 4493355</p>
+      </div>
+
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ZoonosisSomosSuVoz?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/zoonosis_cochabamba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

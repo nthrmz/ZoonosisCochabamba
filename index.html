@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./imgs/logozoonosis.png">
+  <link rel="apple-touch-icon" href="./imgs/logozoonosis.png">
+  <title>Zoonosis Cochabamba</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-home">
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <img src="imgs/logozoonosis.png" alt="Zoonosis Cochabamba" class="logo-img" />
+        <div class="logo-text">
+          Zoonosis Cochabamba<br />
+          <small>Somos su voz</small>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo de clima">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="campana.html">Bajo el mismo cielo</a>
+        <a href="comentarios.html">Comentarios y ubicación</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Centro Municipal de Atención Animal</p>
+          <h1>Cuidamos la salud de tus mascotas y de toda la ciudad</h1>
+          <p class="hero-description">
+            Zoonosis Cochabamba trabaja en la prevención de enfermedades que pasan de animales a personas,
+            con campañas de vacunación, esterilización y educación sobre tenencia responsable.
+          </p>
+
+          <div class="hero-actions">
+            <a href="campana.html" class="btn btn-primary">
+              Conocer la campaña “Bajo el mismo cielo”
+            </a>
+            <a href="#servicios" class="btn btn-ghost">
+              Ver qué hace Zoonosis
+            </a>
+          </div>
+        </div>
+
+        <!-- CARRUSEL DE IMÁGENES HERO -->
+        <div class="hero-illustration">
+          <div class="hero-carousel" id="heroCarousel">
+            <!-- Diapositiva 1 -->
+            <figure class="hero-slide hero-slide--active">
+              <!-- 🐾 Cambia estas rutas por tus propias fotos de actividades -->
+              <img src="./imgs/vacunaciones.jpg" alt="Campaña de vacunación antirrábica" />
+              <figcaption>
+                <span class="hero-tag"><i class="fa-solid fa-syringe"></i> Vacunación antirrábica</span>
+                <p>Jornadas gratuitas en barrios y unidades educativas.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Diapositiva 2 -->
+            <figure class="hero-slide">
+              <img src="./imgs/vacunacion.jpg" alt="Campaña de esterilización responsable" />
+              <figcaption>
+                <span class="hero-tag"><i class="fa-solid fa-paw"></i> Esterilización responsable</span>
+                <p>Atención programada para perros y gatos.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Diapositiva 3 -->
+            <figure class="hero-slide">
+              <img src="./imgs/charlas.jpg" alt="Actividades de educación y sensibilización" />
+              <figcaption>
+                <span class="hero-tag"><i class="fa-solid fa-graduation-cap"></i> Educación y campañas</span>
+                <p>Charlas sobre tenencia responsable y prevención de zoonosis.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Controles del carrusel -->
+            <button class="hero-control hero-control--prev" id="heroPrev" aria-label="Imagen anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="hero-control hero-control--next" id="heroNext" aria-label="Imagen siguiente">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Puntos indicadores -->
+            <div class="hero-dots" id="heroDots">
+              <button class="hero-dot hero-dot--active" data-slide="0" aria-label="Ver imagen 1"></button>
+              <button class="hero-dot" data-slide="1" aria-label="Ver imagen 2"></button>
+              <button class="hero-dot" data-slide="2" aria-label="Ver imagen 3"></button>
+            </div>
+          </div>
+
+          <p class="hero-credits">
+            Ilustraciones y fotografías de las campañas de Zoonosis Cochabamba.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿QUÉ ES ZOONOSIS? -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>¿Qué es Zoonosis Cochabamba?</h2>
+          <p>
+            Es la unidad municipal encargada de prevenir y controlar las enfermedades zoonóticas
+            y promover la convivencia responsable entre personas y animales de compañía.
+          </p>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-card info-card--warm">
+            <div class="info-card-media">
+              <!-- Imagen ilustrativa de vacunación -->
+              <img src="./imgs/vacunaciones2.jpg" alt="Vacunación de perros y gatos" />
+            </div>
+            <h3>Prevención y vacunación</h3>
+            <p>
+              Organizamos campañas de vacunación antirrábica y otras acciones de salud animal en
+              barrios, plazas y unidades educativas.
+            </p>
+          </article>
+
+          <article class="info-card info-card--warm">
+            <div class="info-card-media">
+              <!-- Imagen ilustrativa de esterilización -->
+              <img src="./imgs/estirilizacion.jpg" alt="Jornada de esterilización" />
+            </div>
+            <h3>Esterilización responsable</h3>
+            <p>
+              Apoyamos el control poblacional de perros y gatos para reducir el abandono y mejorar
+              su calidad de vida.
+            </p>
+          </article>
+
+          <article class="info-card info-card--cool">
+            <div class="info-card-media">
+              <!-- Imagen ilustrativa de educación -->
+              <img src="./imgs/mainpagina.png" alt="Taller de educación sobre tenencia responsable" />
+            </div>
+            <h3>Educación y campañas</h3>
+            <p>
+              Desarrollamos materiales y campañas como <strong>“Bajo el mismo cielo”</strong>,
+              para enseñar cómo el clima también afecta a las mascotas.
+            </p>
+          </article>
+
+          <article class="info-card info-card--cool">
+            <div class="info-card-media">
+              <!-- Imagen ilustrativa de orientación -->
+              <img src="./imgs/orientacion.jpg" alt="Atención e información a la ciudadanía" />
+            </div>
+            <h3>Orientación a la población</h3>
+            <p>
+              Brindamos información sobre tenencia responsable, mordeduras, denuncias de maltrato
+              y medidas de prevención.
+            </p>
+          </article>
+        </div>
+
+        <!-- TIRA DE FOTOS DE ACTIVIDADES -->
+        <div class="activities-strip">
+          <h3 class="activities-title">Actividades que realiza Zoonosis</h3>
+          <div class="activities-gallery">
+            <!-- Aquí puedes repetir o cambiar las fotos según tus campañas -->
+            <figure class="activity-item">
+              <img src="./imgs/sanroque.jpg" alt="Campaña en barrio de Cochabamba" />
+              <figcaption>San Roque</figcaption>
+            </figure>
+            <figure class="activity-item">
+              <img src="./imgs/perroton.jpg" alt="Charla en unidad educativa" />
+              <figcaption>El perrotón</figcaption>
+            </figure>
+            <figure class="activity-item">
+              <img src="./imgs/castrlay.jpg" alt="Atención y orientación al vecino" />
+              <figcaption>Castralat</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDA CLIMA -->
+    <section class="section section-band">
+      <div class="container band-grid">
+        <div>
+          <h2>Bajo el mismo cielo, tus mascotas también sienten el clima</h2>
+          <p>
+            En días de mucho sol pueden sufrir golpes de calor y deshidratación. En época de lluvia y
+            frío aumenta el riesgo de hongos, parásitos y enfermedades respiratorias.
+          </p>
+        </div>
+        <div class="band-slogans">
+          <p>Época seca: <strong>hidrata, sombrea y evita las horas de mayor calor.</strong></p>
+          <p>Época húmeda: <strong>seca, limpia charcos y abriga a tus mascotas.</strong></p>
+          <a href="campana.html" class="btn btn-primary btn-small">Ver recomendaciones por época</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA / UBICACIÓN -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>¿Dónde se encuentra Zoonosis?</h2>
+          <p>
+            Este espacio muestra la ubicación del centro municipal y otros puntos de atención
+            relacionados con las campañas vigentes.
+          </p>
+        </header>
+
+        <div class="map-home-grid">
+          <div class="map-info">
+            <h3>Centro Municipal de Zoonosis</h3>
+            <p>
+              Dirección referencial:<br />
+              <span class="map-address">
+                Zoonosis Cercado, municipio de Cochabamba (búscalo así en Google Maps).
+              </span>
+            </p>
+            <p>
+              Horario de atención:<br />
+              <span class="map-address">
+                Lunes a viernes · 08:00 a 16:00 (según programación oficial)
+              </span>
+            </p>
+            <p class="map-note">
+              Para confirmar horarios y campañas móviles, revisa las redes oficiales o comunícate con
+              el Gobierno Autónomo Municipal de Cochabamba.
+            </p>
+          </div>
+
+          <div class="map-embed-wrapper">
+            <iframe
+              class="map-embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60914.65212769544!2d-66.2469124513672!3d-17.40383109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e37300700264e9%3A0xfcddd5ef9bb90363!2sZoonosis%20Cercado!5e0!3m2!1ses!2sbo!4v1763790959667!5m2!1ses!2sbo"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>Zoonosis Cochabamba</h3>
+        <p>Prevención, control y educación sobre enfermedades zoonóticas.</p>
+        <p>Trabajo coordinado con familias, barrios y unidades educativas.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>Teléfono: 4493355</p>
+      </div>
+
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ZoonosisSomosSuVoz?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/zoonosis_cochabamba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

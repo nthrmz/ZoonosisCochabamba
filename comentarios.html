@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./imgs/logozoonosis.png">
+  <link rel="apple-touch-icon" href="./imgs/logozoonosis.png">
+  <title>Comentarios – Zoonosis Cochabamba</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-comentarios">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <img src="imgs/logozoonosis.png" alt="Zoonosis Cochabamba" class="logo-img" />
+        <div class="logo-text">
+          Zoonosis Cochabamba<br />
+          <small>Somos su voz</small>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo de clima">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="campana.html">Bajo el mismo cielo</a>
+        <a href="comentarios.html" class="active">Comentarios y ubicación</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="section">
+      <div class="container comments-layout">
+
+        <!-- FORMULARIO + FEED -->
+        <div class="comments-main">
+          <!-- FORMULARIO -->
+          <div class="comment-form">
+            <header class="section-header">
+              <h2>Comentarios de la comunidad</h2>
+              <p>Cuéntanos cómo vives la campaña “Bajo el mismo cielo” con tus mascotas.</p>
+            </header>
+
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input id="name" type="text" placeholder="Tu nombre" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Comentario</label>
+              <textarea id="message" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="send">
+              <i class="fa-solid fa-paper-plane"></i>
+              Enviar comentario
+            </button>
+
+            <p class="form-note">
+              Los comentarios son de carácter informativo y no reemplazan la atención veterinaria profesional.
+            </p>
+          </div>
+
+          <!-- LISTA DE COMENTARIOS (la maneja app.js) -->
+          <div class="comment-feed" id="comments">
+            <p class="empty-state">
+              Aún no hay comentarios. ¡Sé el primero en compartir tu experiencia! 🐶🐱
+            </p>
+          </div>
+        </div>
+
+        <!-- COLUMNA LATERAL INTERACTIVA -->
+        <aside class="comments-sidebar">
+          <!-- Tarjeta ilustrativa -->
+          <div class="side-card side-card--image">
+            <figure class="side-figure">
+              <!-- 🐾 Cambia por una foto o ilustración de personas con sus mascotas -->
+              <img src="./imgs/comentarios.jpg" alt="Personas participando en la campaña con sus mascotas" />
+              <figcaption>
+                <strong>“Bajo el mismo cielo”</strong><br />
+                Tus comentarios ayudan a mejorar las campañas para más familias y sus animales de compañía.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Galería de mascotas de la comunidad -->
+          <div class="side-card side-card--gallery">
+            <h3 class="side-title">
+              <i class="fa-solid fa-paw"></i> Mascotas de la comunidad
+            </h3>
+            <p class="side-text">
+              Fotos reales enviadas por vecinos: perros y gatos que también viven la campaña.
+            </p>
+
+            <div class="pets-gallery">
+              <figure class="pet-item">
+                <img src="./imgs/pets1.jpg" alt="Perro en campaña de vacunación" />
+                <figcaption>Luna, después de su vacuna antirrábica.</figcaption>
+              </figure>
+              <figure class="pet-item">
+                <img src="./imgs/pets2.jpg" alt="Gato protegido de la lluvia" />
+                <figcaption>Michi abrigado en época de lluvia.</figcaption>
+              </figure>
+              <figure class="pet-item">
+                <img src="./imgs/PETS3.jpg" alt="Perro hidratado en época seca" />
+                <figcaption>Rocky con su bebedero en día soleado.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>Zoonosis Cochabamba</h3>
+        <p>Prevención, control y educación sobre enfermedades zoonóticas.</p>
+        <p>Trabajo coordinado con familias, barrios y unidades educativas.</p>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>Teléfono: 4493355</p>
+      </div>
+
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ZoonosisSomosSuVoz?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/zoonosis_cochabamba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
